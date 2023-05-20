@@ -1,0 +1,35 @@
+.values_block {
+	margin-bottom: 40px;
+}
+
+.values_block__container {
+	display: grid;
+	gap: 40px;
+}
+
+.values_block__demo {
+	text-align: center;
+}
+
+.values_block__features {
+	--features-columns-count: 2;
+}
+
+@media (min-width: 800px) {
+	.values_block__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.values_block__demo {
+		--demo-font-size: 14px;
+
+		text-align: unset;
+	}
+
+	.values_block__item {
+		--features-order: 0;
+    --icon-size: 40px;
+
+		grid-template-columns: 1fr;
+	}
+}

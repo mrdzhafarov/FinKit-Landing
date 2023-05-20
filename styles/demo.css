@@ -1,0 +1,32 @@
+.demo {
+  display: grid;
+  gap: 14px;
+
+  height: max-content;
+}
+
+.demo__description {
+  font-size: var(--demo-font-size, 16px);
+  font-weight: lighter;
+}
+
+.demo__button {
+  width: 100%;
+  font-size: 20px;
+}
+
+@media (min-width: 800px) {
+  .demo {
+    gap: 10px;
+  }
+
+  .demo__description {
+    margin-bottom: 28px;
+
+    font-size: var(--demo-font-size, 22px);
+  }
+
+  .demo__button {
+    width: max-content;
+  }
+}

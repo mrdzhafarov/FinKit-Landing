@@ -1,0 +1,144 @@
+:root {
+  --base-color: #29374e;
+  --base-contract-color: #ffffff;
+  --primary-color-100: #0962e8;
+  --primary-color-90: #cbecff;
+  --primary-color-80: #eff9ff;
+  --shadow-color-100: rgba(0, 0, 0, 0.4);
+  --shadow-color-90: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: 'Euclid Circular', sans-serif;
+  color: var(--base-color);
+}
+
+.container {
+  --container-width: min(100vw, 1100px);
+  --container-margin: max(calc((100vw - var(--container-width)) / 2), 0px);
+
+  width: var(--container-width);
+
+  margin: 0 var(--container-margin);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 36px;
+
+  background-color: var(--primary-color-100);
+
+  border-radius: 12px;
+
+  line-height: 1.4em;
+  color: var(--base-contract-color);
+
+  transition: box-shadow 250ms ease-in-out;
+}
+
+.button:hover,
+.button:focus-visible {
+  box-shadow: 6px 4px 12px var(--shadow-color-100);
+}
+
+.head {
+  line-height: 1.3em;
+  font-weight: 700;
+}
+
+.subhead {
+  line-height: 1.3em;
+  font-weight: 500;
+}
+
+.paragraph {
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.lighter {
+  display: inline-block;
+
+  color: var(--primary-color-100);
+}
+
+.lighter--bg {
+  padding-left: 12px;
+  padding-right: 16px;
+
+  background-color: var(--base-contract-color);
+
+  border-radius: 20px;
+}
+
+.list {
+  display: grid;
+  gap: 20px;
+}
+
+.list__item {
+  background-color: var(--base-contract-color);
+  border-radius: 20px;
+  box-shadow: 6px 4px 12px var(--shadow-color-90);
+  transition: box-shadow 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.list__item:hover {
+  box-shadow: 6px 4px 12px var(--shadow-color-100);
+  transform: scale(1.05);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: var(--icon-size, 1em);
+  height: var(--icon-size, 1em);
+
+  background-color: var(--primary-color-80);
+
+  color: var(--primary-color-100);
+
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+  .head {
+    font-size: 36px;
+  }
+
+  .subhead {
+    font-size: 29px;
+  }
+}
+
+@media (min-width: 800px) {
+  .head {
+    font-size: 64px;
+  }
+
+  .subhead {
+    font-size: 38px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    padding: 0 60px;
+  }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./styles/styles.css" />
+	<title>FinKit</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__container">
+			<section class="header__head">
+				<div class="header__languages">
+					<button class="header__language header__language--active">
+						Ru
+					</button>
+					<button class="header__language">En</button>
+				</div>
+			</section>
+			<section class="demo header__demo">
+				<h1 class="head demo__head">
+					Fin <span class="lighter lighter--bg">Kit</span>
+				</h1>
+				<p class="paragraph demo__description">
+					Гибкая мобильная платформа для быстрой реализации инвестиционных
+					сервисов.
+				</p>
+				<button class="button demo__button">Заказать демо</button>
+			</section>
+			<picture class="header__picture">
+				<source src="./assets/images/desktop/common/main_image.webp"
+					srcset="./assets/images/desktop/retina/main_image@2x.webp 2x" media="(min-width: 800px)" />
+				<img class="header__image" src="./assets/images/mobile/common/main_image.webp"
+					srcset="./assets/images/mobile/retina/main_image@2x.webp 2x" alt="FinKit logo" />
+			</picture>
+
+			<ul class="list features header__features">
+				<li class="list__item features__item">
+					<i class="icon icon-graphs features__icon"></i>
+					<p class="paragraph features__paragraph">
+						Удобный пользовательский интерфейс
+					</p>
+				</li>
+				<li class="list__item features__item">
+					<i class="icon icon-activity features__icon"></i>
+					<p class="paragraph features__paragraph">
+						Панель администратора для ведения учета
+					</p>
+				</li>
+				<li class="list__item features__item">
+					<i class="icon icon-features features__icon"></i>
+					<p class="paragraph features__paragraph">
+						Простая и быстрая интеграция
+					</p>
+				</li>
+				<li class="list__item features__item">
+					<i class="icon icon-settings features__icon"></i>
+					<p class="paragraph features__paragraph">
+						Гибкая масштабируемая система
+					</p>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<main class="main">
+		<section class="block products_block">
+			<div class="container products_block__container">
+				<h2 class="subhead products_block__head">
+					Наши <span class="lighter"> ключевые продукты</span> для инвестиций
+				</h2>
+				<ul class="list products">
+					<li class="list__item products__item">
+						<h3 class="products__head">Платформа для автоследования</h3>
+						<p class="paragraph products__description">
+							Копирование стратегий в автономном режиме
+						</p>
+						<picture class="products__picture">
+							<source src="./assets/images/desktop/common/product_1.webp"
+								srcset="./assets/images/desktop/retina/product_1@2x.webp 2x"
+								media="(min-width: 900px)" />
+							<img class="products__image" src="./assets/images/mobile/common/product_1.webp"
+								srcset="./assets/images/mobile/retina/product_2@2x.webp 2x" alt="Product 1" />
+						</picture>
+					</li>
+					<li class="list__item products__item">
+						<h3 class="products__head">Платформа для робо-эдвайзинга</h3>
+						<p class="paragraph products__description">
+							Персонализированный подбор стратегий исходя из заданный
+							параметров
+						</p>
+						<picture class="products__picture">
+							<source src="./assets/images/desktop/common/product_2.webp"
+								srcset="./assets/images/desktop/retina/product_2@2x.webp 2x"
+								media="(min-width: 900px)" />
+							<img class="products__image" src="./assets/images/mobile/common/product_2.webp"
+								srcset="./assets/images/mobile/retina/product_2@2x.webp 2x" alt="Product 2" />
+						</picture>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="block values_block">
+			<div class="container values_block__container">
+				<div class="demo values_block__demo">
+					<h2 class="subhead demo__head">
+						<span class="lighter"> Представляем ценность </span>
+						для броĸера и банĸа
+					</h2>
+					<p class="paragraph demo__description">
+						Мы помогаем броĸерам и банĸам запустить собственное мобильное
+						приложение для инвестиций в ĸоротĸие сроĸи и с эĸономией бюджета
+					</p>
+					<button class="button demo__button">Заказать демо</button>
+				</div>
+				<ul class="list features values_block__features">
+					<li class="list__item features__item values_block__item">
+						<i class="icon icon-money features__icon"></i>
+						<p class="paragraph features__paragraph">
+							Эĸономим время и деньги на запусĸ digital сервисов
+						</p>
+					</li>
+					<li class="list__item features__item values_block__item">
+						<i class="icon icon-new-clients features__icon"></i>
+						<p class="paragraph features__paragraph">
+							Создаем канал привлечения новых клиентов
+						</p>
+					</li>
+					<li class="list__item features__item values_block__item">
+						<i class="icon icon-more-salarity features__icon"></i>
+						<p class="paragraph features__paragraph">
+							Помогаем увеличить выручку путем запуска нового продукта
+						</p>
+					</li>
+					<li class="list__item features__item values_block__item">
+						<i class="icon icon-loyality features__icon"></i>
+						<p class="paragraph features__paragraph">
+							Повышаем лояльность действующих клиентов
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
